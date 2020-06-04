@@ -1,0 +1,39 @@
+<div class="max-w-md mx-auto bg-white rounded mt-6 border-t-8 border-yellow-500">
+  <header class="flex justify-between border-b-2 items-center">
+    <h2 class="text-3xl text-gray-900 p-4 capitalize">{{pokemon.name}}</h2>
+    <div class="bg-yellow-400 p-2">#{{pokemon.id}}</div>
+  </header>
+  <div class="flex justify-center items-center p-4">
+    <img src={{pokemon.sprites.front_default}} />
+  </div>
+  <table class="m-6 border flex flex-col">
+    <tr class="flex justify-between bg-gray-200 p-2">
+      <td>base_experience</td>
+      <td>{{pokemon.base_experience}}</td>
+    </tr>
+    <tr class="flex justify-between p-2">
+      <td>height</td>
+      <td>{{pokemon.height}}</td>
+    </tr>
+    <tr class="flex justify-between bg-gray-200 p-2">
+      <td>weight</td>
+      <td>{{pokemon.weight}}</td>
+    </tr>
+    <tr class="flex justify-between p-2">
+      <td>abilities</td>
+      <td>{{pokemon.abilities.length}}</td>
+    </tr>
+    <tr class="flex justify-between bg-gray-200 p-2">
+      <td>forms</td>
+      <td>{{pokemon.forms.length}}</td>
+    </tr>
+    <tr class="flex justify-between p-2">
+      <td>moves</td>
+      <td>{{pokemon.moves.length}}</td>
+    </tr>
+    <tr class="flex justify-between bg-gray-200 p-2">
+      <td>stats</td>
+      <td>{{pokemon.stats.length}}</td>
+    </tr>
+  </table>
+</div>
